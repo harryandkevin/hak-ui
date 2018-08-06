@@ -1,0 +1,19 @@
+{
+  "name": "hak-ui",
+  "version": "1.0.0",
+  "description": "UI for harryandkevin site",
+  "author": "Harry Ho and Kevin Kuchar",
+  "license": "MIT",
+  "scripts": {
+    "start": "parcel app/index.html"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-react": "^6.24.1"
+  },
+  "dependencies": {
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "react-router-dom": "^4.3.1"
+  }
+}
