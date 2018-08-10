@@ -5,11 +5,16 @@
   "author": "Harry Ho and Kevin Kuchar",
   "license": "MIT",
   "scripts": {
-    "start": "parcel app/index.html"
+    "start": "parcel app/index.html",
+    "lint": "esw src/app.js --color",
+    "lint:watch": "npm run lint -- --watch"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
-    "babel-preset-react": "^6.24.1"
+    "babel-preset-react": "^6.24.1",
+    "eslint": "^5.3.0",
+    "eslint-plugin-react": "^7.10.0",
+    "eslint-watch": "^4.0.2"
   },
   "dependencies": {
     "react": "^16.4.2",
