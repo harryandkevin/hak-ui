@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import FullScreenHero from './components/FullScreenHero';
+import HeroBanner from './components/HeroBanner';
 
 class App extends Component {
   render() {
     return (
-      <FullScreenHero>
-        Yoyoyo
-      </FullScreenHero>
+      <HeroBanner>
+        <div>Yoyoyo</div>
+      </HeroBanner>
     );
   }
 }
