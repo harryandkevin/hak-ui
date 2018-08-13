@@ -29,10 +29,10 @@ export default class HeroBanner extends Component {
 
 HeroBanner.defaultProps = {
   size: 'full'
-}
+};
 
 HeroBanner.propTypes = {
   size: PropTypes.string,
   background: PropTypes.string.isRequired,
   children: PropTypes.element
-}
+};
