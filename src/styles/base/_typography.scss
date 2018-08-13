@@ -1,8 +1,9 @@
 body {
-  font-family: Roboto, sans-serif;
-  font-size: $font-size-base;
+  font-family: $roboto;
+	font-size: $font-size-base;
+	font-weight: $font-weight-light;
   line-height: $line-height-base;
-  color: $font-color;
+  color: $font-color-dark;
 }
 
 h1 {
