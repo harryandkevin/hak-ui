@@ -1,0 +1,23 @@
+body {
+  font-family: $roboto;
+	font-size: $font-size-base;
+	font-weight: $font-weight-light;
+  line-height: $line-height-base;
+  color: $font-color-dark;
+}
+
+h1 {
+  font-size: $font-size-xl;
+}
+
+h2 {
+  font-size: $font-size-lg;
+}
+
+h3 {
+  font-size: $font-size-md;
+}
+
+h4 {
+  font-size: $font-size-sm;
+}
