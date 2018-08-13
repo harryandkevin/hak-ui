@@ -7,16 +7,20 @@ import { classOptions } from '../../helpers';
  */
 export default class HeroBanner extends Component {
   render () {
-    const { children, size } = this.props;
+    const { children, size, background } = this.props;
 
     const classNames = classOptions({
-      'hero': true,
-      'hero--full': size === 'full',
-      'hero--fluid': size === 'fluid'
+      'hero-banner': true,
+      'hero-banner--full': size === 'full',
+      'hero-banner--fluid': size === 'fluid'
     });
 
+    const style = {
+      backgroundImage: `url(${background})`
+    }
+
     return (
-      <div className={classNames}>
+      <div className={classNames} style={style}>
         {children}
       </div>
     );
@@ -29,5 +33,6 @@ HeroBanner.defaultProps = {
 
 HeroBanner.propTypes = {
   size: PropTypes.string,
+  background: PropTypes.string.isRequired,
   children: PropTypes.element
 }
