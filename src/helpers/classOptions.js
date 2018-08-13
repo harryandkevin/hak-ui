@@ -6,20 +6,20 @@
  * @return {String} - Space separated classNames
  */
 export const classOptions = (options) => {
-	if (Array.isArray(options)) {
-		return options.join(',');
-	}
+  if (Array.isArray(options)) {
+    return options.join(',');
+  }
 
-	if (typeof options === 'object') {
-		const classes = Object.keys(options);
+  if (typeof options === 'object') {
+    const classes = Object.keys(options);
 		
-		return classes.reduce((acc, val) => {
-				return `${acc} ${options[val] ? val : ''}`;
-		}, '').trim();
-	}
+    return classes.reduce((acc, val) => {
+      return `${acc} ${options[val] ? val : ''}`;
+    }, '').trim();
+  }
 
-	const errorString = `classOptions error: Provided options must be an array or object. A ${typeof options} was provided.`;
-	console.warn(errorString);
+  const errorString = `classOptions error: Provided options must be an array or object. A ${typeof options} was provided.`;
+  console.warn(errorString);
 
-	return '';
+  return '';
 }
