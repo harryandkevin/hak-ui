@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import IntroBanner from './views/IntroBanner';
+import IntroView from './views/IntroView';
 import './styles/main.scss';
 
 class App extends Component {
   render() {
     return (
-      <IntroBanner />
+      <IntroView />
     );
   }
 }
